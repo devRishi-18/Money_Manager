@@ -7,6 +7,7 @@ import 'package:newproject2/controllers/db_helper.dart';
 import 'package:newproject2/modals/transaction_modal.dart';
 import 'package:newproject2/pages/add_transactions.dart';
 import 'package:newproject2/pages/widgets/confirmDialogue.dart';
+import 'package:newproject2/pages/widgets/info_snackBar.dart';
 import 'package:newproject2/static.dart' as Static;
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -451,6 +452,12 @@ class _HomePageState extends State<HomePage> {
 
   Widget expenseTile(int value, String note,DateTime date,int index){
     return InkWell(
+      splashColor: Static.PrimaryMaterialColor[400],
+      onTap: () {
+        ScaffoldMessenger.of(context).showSnackBar(
+          deleteInfoSnackBar,
+        );
+      },
       onLongPress: () async {
         bool? answer= await showConfirmDialog(context, "Warning", "Do You want to delete this record?");
         if(answer!=null && answer){
@@ -522,6 +529,12 @@ class _HomePageState extends State<HomePage> {
 
   Widget incomeTile(int value, String note,DateTime date,int index){
     return InkWell(
+      splashColor: Static.PrimaryMaterialColor[400],
+      onTap: () {
+        ScaffoldMessenger.of(context).showSnackBar(
+          deleteInfoSnackBar,
+        );
+      },
       onLongPress: () async {
         bool? answer= await showConfirmDialog(context, "Warning", "Do You want to delete this record?");
         if(answer!=null && answer){
@@ -530,6 +543,7 @@ class _HomePageState extends State<HomePage> {
           });
         }
       },
+
       child: Container(
         margin: EdgeInsets.all(8.0),
         padding: EdgeInsets.all(18.0),
