@@ -1,28 +1,28 @@
 # Expense Manager
 
-A new Flutter project.
+This app helps you to manage your Income and Expense. It is coded in flutter, dart. I have used Hive database to store data. This app also shows the chart of your recent expenses.
 
 # Screeshots
 
 ### HomeScreen 
-![Details](screnshots/splash.png)
+![Details](screenshots/splash.png)
 
 ### HomePage 
-![Homepage with no data](screnshots/homepage1.png)
+![Homepage with no data](screenshots/homepage1.png)
 
 ### Add Transaction 
-![Transaction](screnshots/add1.png)
+![Transaction](screenshots/add1.png)
 
 ### Calender 
-![Transaction 2](screnshots/add2.png)
+![Transaction 2](screenshots/add2.png)
 
 ### HomeScreen with data 
-![Homepage](screnshots/home2.png)
+![Homepage](screenshots/home2.png)
 
 ### Expense Chart 
-![Homepage](screnshots/home3.png)
+![Homepage](screenshots/home3.png)
 
 ### Transactions 
-![Homepage](screnshots/home4.png)
+![Homepage](screenshots/home4.png)
 
 
